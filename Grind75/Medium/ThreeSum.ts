@@ -77,7 +77,7 @@ const threeSum2 = (nums: number[]): number[][] => {
 
     const twoSumTarget = target - firstNumber;
     const twoSums = twoSum(i + 1, twoSumTarget);
-    twoSums.forEach(result => {
+    twoSums.forEach((result) => {
       results.push([firstNumber, ...result]);
     });
   }
